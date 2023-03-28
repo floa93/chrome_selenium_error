@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+    <script>
+        function closePopup() {
+            window.opener.top.location = 'second.html'
+            window.close()
+        }
+    </script>
+</head>
+<body>
+Popup
+<a href="#" id="close" onclick="closePopup()">Close</a>
+</body>
+</html>
